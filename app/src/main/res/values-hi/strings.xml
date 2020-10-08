@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Assignment 1</string>
-    <string name="hello_message">Namaste Duniya!</string>
-    <string name="ButtonText">Main Button Hoon</string>
+    <string name="app_name">असाइनमेंट 2</string>
+    <string name="hello_message">नमस्कार दुनिया !</string>
+    <string name="ButtonText">मैं हूं एक बटन |</string>
+    <string name="login">लॉगिन </string>
+    <string name="edittext">लॉगिन नाम</string>
+    <string name="password">पासवर्ड</string>
+    <string name="radio">रेडियो बटन</string>
+    <string name="check">चेक बॉक्स</string>
+    <string name="switch1">यह क्या करता है?</string>
+
 </resources>
