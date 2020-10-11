@@ -6,8 +6,20 @@
     <string name="login">लॉगिन </string>
     <string name="edittext">लॉगिन नाम</string>
     <string name="password">पासवर्ड</string>
+    <string name="button">लॉगिन </string>
     <string name="radio">रेडियो बटन</string>
     <string name="check">चेक बॉक्स</string>
     <string name="switch1">यह क्या करता है?</string>
+
+    <string name="preference_name">मेरीफ़ाइल </string>
+    <string name="emailKey">ईमेल </string>
+    <string name="emailValue">ईमेल@डोमेन.कॉम</string>
+    <string name="On">स्विच चालन है! </string>
+    <string name="Off">स्विच बंद है! </string>
+    <string name="dialog_msg">क्या आप वापस जाना चाहते हैं? </string>
+    <string name="title">संवाद बॉक्स </string>
+    <string name="ok">हां </string>
+    <string name="cancel">नहीं </string>
+    <string name="response">लिस्टआइटमएक्टिविटी पारित: मेरी जानकारी साझा करने के लिए </string>
 
 </resources>

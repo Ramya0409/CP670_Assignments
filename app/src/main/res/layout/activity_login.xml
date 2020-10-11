@@ -44,4 +44,11 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword" />
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSaveClicked"
+        android:text="@string/button" />
+
 </LinearLayout>

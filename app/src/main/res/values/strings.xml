@@ -5,7 +5,20 @@
     <string name="login">Login</string>
     <string name="edittext">Login Name</string>
     <string name="password">Password</string>
+    <string name="button">Login</string>
     <string name="radio">Radio Button</string>
     <string name="check">Check Box</string>
     <string name="switch1">What does this do?</string>
+
+    <string name="preference_name">MyFile</string>
+    <string name="emailKey">email</string>
+    <string name="emailValue">email@domain.com</string>
+    <string name="On">Switch is On!</string>
+    <string name="Off">Switch is Off!</string>
+    <string name="dialog_msg">Do you want to go back?</string>
+    <string name="title">Dialog box</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">No</string>
+    <string name="response">ListItemsActivity passed: My information to share </string>
+
 </resources>

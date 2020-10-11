@@ -22,15 +22,20 @@
         android:layout_height="wrap_content"
         android:text="@string/check"
         android:layout_columnWeight="1"
+        android:onClick="setOnTicked"
         android:gravity="fill" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/switch1"
         android:layout_columnWeight="1"
-        android:gravity="fill" />
+        android:checked="false"
+        android:textOn="@string/On"
+        android:textOff="@string/Off"
+        android:gravity="fill"
+        android:onClick="setOnCheckChanged"
+        android:text="@string/switch1" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -38,6 +43,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_camera"
         android:layout_columnWeight="1"
+        android:onClick="imageClick"
         android:gravity="fill" />
 
 </GridLayout>

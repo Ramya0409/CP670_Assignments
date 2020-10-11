@@ -27,6 +27,7 @@
         android:layout_marginEnd="123dp"
         android:layout_marginBottom="348dp"
         android:text="@string/ButtonText"
+        android:onClick="onClicked"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
