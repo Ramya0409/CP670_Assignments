@@ -21,8 +21,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        loadUserData();
         Log.i(ACTIVITY_NAME, "In onCreate()");
+        loadUserData();
     }
 
     private void loadUserData() {
