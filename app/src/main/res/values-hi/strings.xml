@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">असाइनमेंट 2</string>
+    <string name="app_name">असाइनमेंट 3</string>
+    <!--for assignment 1 -->
     <string name="hello_message">नमस्कार दुनिया !</string>
     <string name="ButtonText">मैं हूं एक बटन |</string>
+    <!--for assignment 2 -->
     <string name="login">लॉगिन </string>
     <string name="edittext">लॉगिन नाम</string>
     <string name="password">पासवर्ड</string>
@@ -10,7 +12,6 @@
     <string name="radio">रेडियो बटन</string>
     <string name="check">चेक बॉक्स</string>
     <string name="switch1">यह क्या करता है?</string>
-
     <string name="preference_name">MyFile </string>
     <string name="emailKey">ईमेल </string>
     <string name="emailValue">ईमेल@डोमेन.कॉम</string>
@@ -21,5 +22,9 @@
     <string name="ok">हां </string>
     <string name="cancel">नहीं </string>
     <string name="response">लिस्टआइटमएक्टिविटी पारित: मेरी जानकारी साझा करने के लिए </string>
+    <!--for assignment 3 -->
+    <string name="ButtonText2">चैट शुरू करें</string>
+    <string name="sendbutton">भेजें</string>
+    <string name="textmsg">संदेश दर्ज करें</string>
 
 </resources>

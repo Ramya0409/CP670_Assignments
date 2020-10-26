@@ -64,4 +64,11 @@ public class MainActivity extends AppCompatActivity {
             Log.i(ACTIVITY_NAME, "Returned to MainActivity.onActivityResult");
         }
     }
+
+    public void startChat(View view) {
+        Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+        Intent window = new Intent(MainActivity.this, Chatwindow.class);
+        startActivity(window);
+    }
+
 }
