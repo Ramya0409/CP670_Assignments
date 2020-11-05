@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Assignment 3</string>
+    <string name="app_name">Assignment 4</string>
     <!--for assignment 1 -->
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a Button</string>
@@ -25,5 +25,13 @@
     <string name="ButtonText2">Start Chat</string>
     <string name="sendbutton">Send</string>
     <string name="textmsg">Enter Message</string>
+    <!--for assignment 4 -->
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="ButtonText3">Toolbar Activity</string>
+    <string name="action_one">You selected item 1</string>
+    <string name="hint">Enter message</string>
+    <string name="action">You clicked on Action button</string>
+    <string name="about">Version 1.0 by Ramya Shree</string>
+    <string name="action_about">About</string>
 
 </resources>

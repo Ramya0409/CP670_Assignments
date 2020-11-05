@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TestToolbar">
+
+    <item
+        android:id="@+id/action_one"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_add_circle_outline_24"
+        android:orderInCategory="101"
+        android:title="One" />
+
+    <item
+        android:id="@+id/action_two"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_add_alert_24"
+        android:orderInCategory="102"
+        android:title="Two" />
+
+    <item
+        android:id="@+id/action_three"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_add_location_24"
+        android:orderInCategory="103"
+        android:title="Three" />
+
+    <item
+        android:id="@+id/action_about"
+        app:showAsAction="never"
+        android:orderInCategory="104"
+        android:title="@string/action_about" />
+
+
+</menu>

@@ -71,4 +71,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(window);
     }
 
+    public void testToolbar(View view) {
+        Log.i(ACTIVITY_NAME, "User clicked Toolbar activity");
+        Intent toolbar = new Intent(MainActivity.this, TestToolbar.class);
+        startActivity(toolbar);
+    }
 }
