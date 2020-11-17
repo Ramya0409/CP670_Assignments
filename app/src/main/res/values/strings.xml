@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Assignment 4</string>
+    <string name="app_name">Assignment 3</string>
     <!--for assignment 1 -->
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a Button</string>
-    <!--for assignment 2 -->
+    <!--for assignment 2-1 -->
     <string name="login">Login</string>
     <string name="edittext">Login Name</string>
     <string name="password">Password</string>
@@ -21,11 +21,11 @@
     <string name="ok">Yes</string>
     <string name="cancel">No</string>
     <string name="response">ListItemsActivity passed: My information to share </string>
-    <!--for assignment 3 -->
+    <!--for assignment 2-2 -->
     <string name="ButtonText2">Start Chat</string>
     <string name="sendbutton">Send</string>
     <string name="textmsg">Enter Message</string>
-    <!--for assignment 4 -->
+    <!--for assignment 2-3 -->
     <string name="title_activity_test_toolbar">TestToolbar</string>
     <string name="ButtonText3">Toolbar Activity</string>
     <string name="action_one">You selected item 1</string>
