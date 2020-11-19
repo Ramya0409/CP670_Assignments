@@ -76,4 +76,10 @@ public class MainActivity extends AppCompatActivity {
         Intent toolbar = new Intent(MainActivity.this, TestToolbar.class);
         startActivity(toolbar);
     }
+
+    public void weatherForecast(View view) {
+        Log.i(ACTIVITY_NAME,"User clicked weather forecast");
+        Intent wf = new Intent(MainActivity.this, WeatherForecast.class);
+        startActivity(wf);
+    }
 }
