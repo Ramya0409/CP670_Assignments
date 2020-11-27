@@ -1,6 +1,8 @@
 package com.example.androidassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.app.ListActivity;
 import android.content.ContentValues;
 import android.content.Context;
@@ -15,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -25,8 +28,10 @@ public class Chatwindow extends AppCompatActivity {
     ListView chatview;
     Button sendbtn;
     EditText editText;
+    Boolean flayout;
     ArrayList<String> chat;
     ChatAdapter adapter;
+    Cursor cursor;
     private SQLiteDatabase db;
     private ChatDatabaseHelper dbOpenHelper;
 
@@ -34,18 +39,19 @@ public class Chatwindow extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) throws SQLException {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_window);
-
         Log.i(ACTIVITY_NAME, "ChatWindow onCreate()");
         chatview = findViewById(R.id.chatview);
         sendbtn = findViewById(R.id.button4);
         editText = findViewById(R.id.editText3);
+        flayout = Boolean.valueOf(String.valueOf(findViewById(R.id.flayout)));
+
         chat = new ArrayList<String>();
         adapter = new ChatAdapter(this);
         chatview.setAdapter(adapter);
         dbOpenHelper = new ChatDatabaseHelper(this);
         db = dbOpenHelper.getWritableDatabase();
-
-        Cursor cursor = db.query(dbOpenHelper.TABLE_NAME, null,null,null,null,
+        String[] columns = {ChatDatabaseHelper.KEY_ID,ChatDatabaseHelper.KEY_MESSAGE};
+        cursor = db.query(dbOpenHelper.TABLE_NAME, columns,null,null,null,
                 null,null,null);
         cursor.moveToFirst();
 
@@ -60,6 +66,25 @@ public class Chatwindow extends AppCompatActivity {
             cursor.moveToNext();
         }
         cursor.close();
+
+        //fragment(adapter.getItemId());
+    }
+
+    public void fragment(int position, String msg){
+        MessageFragment msgFragment = new MessageFragment();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+
+        Bundle args = new Bundle();
+        args.putInt("position", position);
+        args.putString("message", msg);
+
+        if(flayout) {
+            Log.i(ACTIVITY_NAME, "Using tablet layout");
+            ft.add(R.id.fragment, msgFragment);
+            msgFragment.setArguments(args);
+        }
+        else
+            Log.i(ACTIVITY_NAME,"Using phone layout");
     }
 
     @Override
@@ -120,6 +145,13 @@ public class Chatwindow extends AppCompatActivity {
             //super.getItem(pos);
             return chat.get(pos);
         }
+
+        @Override
+        public long getItemId(int position){
+            cursor.moveToPosition(position);
+            return cursor.getLong(cursor.getColumnIndex(ChatDatabaseHelper.KEY_ID));
+        }
+
         @Override
         public View getView(int pos, View convertView, ViewGroup parent){
             //super.getView(pos,convertView,parent);

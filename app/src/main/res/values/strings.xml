@@ -39,6 +39,9 @@
     <string name="ctemp">Current Temperature :</string>
     <string name="mintemp">Minimum Temperature :</string>
     <string name="maxtemp">Maximum Temperature :</string>
+    <string name="message">Message Here</string>
+    <string name="id">ID=</string>
+    <string name="delete">DELETE THIS MESSAGE</string>
     <string-array name="cities">
         <item>Abbotsford</item>
         <item>Alert</item>
